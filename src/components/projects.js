@@ -13,8 +13,8 @@ function Projects() {
         },
         {
             title: 'Project 2',
-            description: 'Description of Project 2',
-            url: 'https://example.com/project2',
+            description: 'General Store Management System',
+            url: 'https://github.com/Gaurav0111/Python-Projects/tree/main/general_store_management',
             image: project2Image, // Assign the image for Project 2
         },
         {
