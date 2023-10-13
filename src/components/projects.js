@@ -7,8 +7,8 @@ function Projects() {
     const projects = [
         {
             title: 'Project 1',
-            description: 'Description of Project 1',
-            url: 'https://example.com/project1',
+            description: 'Laboratary Report Generator',
+            url: 'https://github.com/Gaurav0111/Python-Projects/blob/main/index.py',
             image: project1Image, // Assign the image for Project 1
         },
         {
@@ -19,7 +19,7 @@ function Projects() {
         },
         {
             title: 'Project 3',
-            description: 'Description of Project 2',
+            description: 'General Store Management System',
             url: 'https://example.com/project2',
             image: project2Image, // Assign the image for Project 2
         },
