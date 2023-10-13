@@ -1,0 +1,54 @@
+/* src/styles/Contact.css */
+.contact {
+    margin: 5rem;
+    display: flex;
+    flex-direction: row;
+    margin-top: 6rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact_heading{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2.2rem;
+}
+
+.contact p {
+    margin: 0.5rem 0;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 2rem;
+}
+
+/* Make the contact section responsive */
+@media (max-width: 768px) {
+    .contact {
+        flex-direction: column;
+    }
+}
+
+.social-media-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+/* Adjust the social media links for responsiveness */
+@media (max-width: 768px) {
+    .social-media-links {
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: 2rem;
+    }
+}
+
+.social-media-links img {
+    width: 40px;
+    height: 40px;
+    margin: 0.3rem;
+}
+
+.social-media-links a {
+    text-decoration: none;
+    margin: 0.3rem;
+}

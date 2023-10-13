@@ -1,0 +1,53 @@
+.resume {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.resume-printing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin-top: -47rem;
+    margin-left: -25rem;
+}
+
+.resume-heading {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-family: 'Libre Baskerville', serif;
+}
+
+.resume-image {
+    height: 40rem;
+    width: 100%;
+    max-width: 30rem;
+    display: block;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    .resume-printing {
+        margin-top: -35rem;
+    }
+
+    .resume-heading {
+        font-size: 2rem;
+    }
+
+    .resume-image {
+        max-width: 80%;
+    }
+}
+.contact {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 768px) {
+    .contact {
+        margin-top: 3rem;
+    }
+}

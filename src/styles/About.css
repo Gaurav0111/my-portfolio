@@ -1,0 +1,19 @@
+.about {
+    margin: 5rem;
+    display: flex;
+    flex-direction: row;
+    margin-top: 12rem;
+}
+
+.image_gaurav{
+    width: 40rem;
+    margin-left: 1rem;
+    border-radius: 4rem;
+}
+.about_heading{
+    font-family: 'Oswald', sans-serif;
+}
+.about_data{
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1.2rem;
+}
