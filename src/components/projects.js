@@ -3,6 +3,7 @@ import '../styles/Projects.css';
 import project1Image from '../images/project1.png'; // Import your project images
 import project2Image from '../images/project2.png'; // Import your project images
 import project3Image from '../images/project3.png'; // Import your project images
+import project4Image from '../images/project4.png'; // Import your project images
 
 function Projects() {
     const projects = [
@@ -10,37 +11,37 @@ function Projects() {
             title: 'Project 1',
             description: 'Laboratary Report Generator',
             url: 'https://github.com/Gaurav0111/Python-Projects/blob/main/index.py',
-            image: project1Image, // Assign the image for Project 1
+            image: project1Image,
         },
         {
             title: 'Project 2',
             description: 'General Store Management System',
             url: 'https://github.com/Gaurav0111/Python-Projects/tree/main/general_store_management',
-            image: project2Image, // Assign the image for Project 2
+            image: project2Image,  
         },
         {
             title: 'Project 3',
             description: 'Personal Portfolio',
             url: 'https://github.com/Gaurav0111/my-portfolio',
-            image: project3Image, // Assign the image for Project 2
+            image: project3Image,  
+        },
+        {
+            title: 'Project 4',
+            description: 'Restaurant front-end Webpage',
+            url: 'https://github.com/Gaurav0111/Html-CSS-project',
+            image: project4Image,  
         },
         {
             title: 'Project 4',
             description: 'Description of Project 2',
             url: 'https://example.com/project2',
-            image: project2Image, // Assign the image for Project 2
+            image: project2Image, 
         },
         {
             title: 'Project 4',
             description: 'Description of Project 2',
             url: 'https://example.com/project2',
-            image: project2Image, // Assign the image for Project 2
-        },
-        {
-            title: 'Project 4',
-            description: 'Description of Project 2',
-            url: 'https://example.com/project2',
-            image: project2Image, // Assign the image for Project 2
+            image: project2Image,  
         },
     ];
 
