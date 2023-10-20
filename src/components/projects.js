@@ -2,6 +2,7 @@ import React from 'react';
 import '../styles/Projects.css';
 import project1Image from '../images/project1.png'; // Import your project images
 import project2Image from '../images/project2.png'; // Import your project images
+import project3Image from '../images/project3.png'; // Import your project images
 
 function Projects() {
     const projects = [
@@ -19,9 +20,9 @@ function Projects() {
         },
         {
             title: 'Project 3',
-            description: 'General Store Management System',
-            url: 'https://example.com/project2',
-            image: project2Image, // Assign the image for Project 2
+            description: 'Personal Portfolio',
+            url: 'https://github.com/Gaurav0111/my-portfolio',
+            image: project3Image, // Assign the image for Project 2
         },
         {
             title: 'Project 4',
