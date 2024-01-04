@@ -17,3 +17,9 @@
     font-family: 'Libre Baskerville', serif;
     font-size: 1.2rem;
 }
+
+/* @media (max-width: 768px) {
+    .contact {
+        flex-direction: column;
+    }
+} */

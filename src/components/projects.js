@@ -10,7 +10,7 @@ function Projects() {
         {
             title: 'Project 1',
             description: 'Laboratary Report Generator',
-            url: 'https://github.com/Gaurav0111/Python-Projects/blob/main/index.py',
+            url: 'https://github.com/Gaurav0111/cattle_filed_report_generation',
             image: project1Image,
         },
         {

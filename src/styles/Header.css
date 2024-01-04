@@ -1,124 +1,104 @@
-/* Style the header element */
-header {
-  position: relative;
+/* header.css */
+.header {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-image: url("../images/your-image.avif");
+  background-position: center;
+  background-size: 100% 100%; /* Set background size to cover entire element */
+  background-repeat: no-repeat;
 }
 
-/* Style the background image */
-.background-image {
-  width: 100%;
-  height: 46rem;
-}
-
-/* Style the section containing header content */
-.headerCSS {
-  position: absolute;
-  margin-top: -45rem;
-  width: 100%;
+.header-container {
   display: flex;
   justify-content: space-between;
-  /* Adjust as needed */
   align-items: center;
+  flex-wrap: wrap;
+  padding: 1rem;
+  height: auto;
 }
 
-.header-left {
-  font-family: 'Roboto', sans-serif;
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
 }
 
-/* Style your name (Gaurav) */
-.header-left a {
-  font-size: 36px;
-  color: #ffffff;
-  text-decoration: none;
-  margin-left: 2rem;
-  cursor: pointer;
-}
-
-/* Style the navigation links */
-.header-center {
+.social-media {
+  margin-right: 1rem;
   display: flex;
-  flex-direction: column;
-  font-family: 'Gabarito', sans-serif;
+  gap: 1rem;
 }
 
-.header-center ul {
+.social-media a {
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+nav ul {
   list-style: none;
   padding: 0;
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
-  /* Adjust the margin as needed */
+  margin: 0;
 }
 
-.header-center a.header-text {
-  text-decoration: none;
-  color: #dedddd;
-  margin: 0 20px;
-  cursor: pointer;
-  font-size: 18px;
-}
-
-/* Style the social media icons on the right */
-.header-right {
-  display: flex;
-  align-items: center;
-}
-
-.header-right a {
-  text-decoration: none;
-}
-
-/* Style the social media icon images */
-.logo {
-  width: 40px;
-  height: 40px;
-  margin-right: 10px;
-  /* Adjust the margin as needed */
-}
-
-.datasection {
-  margin-top: -27rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  /* Center items horizontally */
-}
-
-.para_data {
-  color: white;
-  text-align: center;
-  font-size: 2rem;
-  margin-top: 0rem;
-  font-family: 'Oswald', sans-serif;
-}
-
-
-.btnnn {
-  width: 7rem;
-  background-color: #6b676700;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  font-size: 16px;
-  cursor: pointer;
-  margin-top: 20px;
+nav li {
   display: inline-block;
+  margin-right: 1rem;
+}
+
+.header-text {
+  color: #ffffff;
   text-decoration: none;
-  transition: background-color 0.3s;
-  border: 1px solid black;
 }
 
-.btnnn:hover {
-  background-color: #281b1b35;
+.hero-text {
+  text-align: center;
+  position: relative;
+  top: 20rem;
+  color: #fff;
 }
 
-@media (max-width: 768px) {
-  .header-left a {
-    font-size: 24px;
+.hero-text h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+
+.button {
+  padding: 1rem 2rem;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 1rem;
+}
+@media only screen and (max-width: 1400px) {
+  .header {
+    background-size: 100% 100%; /* Set background size to cover entire element */
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
   }
 
-  .header-center a.header-text {
-    font-size: 16px;
+  nav,
+  .social-media {
+    text-align: center;
+    margin: 1rem 0;
+    display: block;
+  }
+
+  nav {
+    display: none;
   }
 }

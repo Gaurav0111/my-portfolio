@@ -1,60 +1,34 @@
+// header.js
 import React from "react";
 import '../styles/Header.css';
 
 function Header() {
   return (
-    <header id="header" >
-      <div>
-        <img
-          src={`${process.env.PUBLIC_URL}/your-image.avif`}
-          alt="background-image"
-          className="background-image"
-        />
-      </div>
-      <section className="headerCSS">
-        <div className="header-left">
-          <a href="#home">Gaurav</a>
-        </div>
-        <div className="header-center">
+    <header className="header">
+      <div className="header-container">
+        <div className="logo">Gaurav</div>
+        <nav>
           <ul>
-            <a href="#header" className='header-text'>Home</a>
-            <a href="#contact" className='header-text'>Contact</a>
-            <a href="#resume" className='header-text'>Resume</a>
-            <a href="#project" className='header-text'>Project</a>
-            <a href="#whatido" className='header-text'>What I Do</a>
+            <li><a href="#header" className="header-text">Home</a></li>
+            <li><a href="#contact" className="header-text">Contact</a></li>
+            <li><a href="#resume" className="header-text">Resume</a></li>
+            <li><a href="#project" className="header-text">Project</a></li>
+            <li><a href="#whatido" className="header-text">What I Do</a></li>
           </ul>
+        </nav>
+        <div className="social-media">
+          <a href="#"><img src={`${process.env.PUBLIC_URL}/linkedin-logo.jpeg`} alt="LinkedIn" width="40" height="40" /></a>
+          <a href="#"><img src={`${process.env.PUBLIC_URL}/github-logo.jpeg`} alt="GitHub" width="40" height="40" /></a>
+          <a href="#"><img src={`${process.env.PUBLIC_URL}/instagram-logo.jpeg`} width="40" height="40" /></a>
         </div>
-        <div className="header-right">
-          <a href="https://www.linkedin.com/in/gaurav-garwal/" target="_blank" rel="noopener noreferrer">
-            <img
-              src={`${process.env.PUBLIC_URL}/linkedin-logo.jpeg`}
-              alt="LinkedIn"
-              className="logo linkedin"
-            />
-          </a>
-          <a href="https://auth.geeksforgeeks.org/user/garwalgatsl7/practice" target="_blank" rel="noopener noreferrer">
-            <img
-              src={`${process.env.PUBLIC_URL}/instagram-logo.jpeg`}
-              alt="Instagram"
-              className="logo instagram"
-            />
-          </a>
-          <a href="https://github.com/Gaurav0111" target="_blank">
-            <img
-              src={`${process.env.PUBLIC_URL}/github-logo.jpeg`}
-              alt="GitHub"
-              className="logo github"
-            />
-          </a>
-        </div>
-      </section>
-      <div className="datasection">
-        <p className='para_1 para_data'>Welcome</p>
-        <p className='para_data para_2'>I'm a Developer</p>
-        <p className='para_data para_3'>Based in Dehradun</p>
-        <button className='btnnn' herf='#contact'>Hire Me</button>
+      </div>
+      <div className="hero-text">
+        <h1>This is Gaurav.</h1>
+        <p>I am a passionate web developer with a knack for creating beautiful and user-friendly websites.</p>
+        <a href="mailto:garwalgaurav480@gmail.com" className="button">Hire me</a>
       </div>
     </header>
-  )
+  );
 }
+
 export default Header;
