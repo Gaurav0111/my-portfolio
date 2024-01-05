@@ -71,20 +71,20 @@ nav li {
 }
 
 .button {
-  background-color: #6b676700;
-    border: 1px solid #000;
-    border-radius: 5px;
-    color: #fff;
-    cursor: pointer;
-    display: inline-block;
-    font-size: 16px;
-    margin-top: 20px;
-    padding: 10px 20px;
-    text-decoration: none;
-    transition: background-color .3s;
-    width: 5rem;
+  background-color: #df000000;
+  border: 1px solid #000;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 20px;
+  padding: 10px 20px;
+  text-decoration: none;
+  transition: background-color .3s;
+  width: 5rem;
 }
-.button:hover{
+.hero-text a:hover{
   background-color: #4d4b4b00;
 }
 
@@ -112,5 +112,8 @@ nav li {
 
   nav {
     display: none;
+  }
+  .logo {
+    color: white;
   }
 }

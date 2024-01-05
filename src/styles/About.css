@@ -1,25 +1,49 @@
+/* Base styles */
 .about {
-    margin: 5rem;
     display: flex;
-    flex-direction: row;
-    margin-top: 12rem;
-}
-
-.image_gaurav{
-    width: 40rem;
-    margin-left: 1rem;
-    border-radius: 4rem;
-}
-.about_heading{
-    font-family: 'Oswald', sans-serif;
-}
-.about_data{
-    font-family: 'Libre Baskerville', serif;
-    font-size: 1.2rem;
-}
-
-/* @media (max-width: 768px) {
-    .contact {
-        flex-direction: column;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .about_heading {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .about_data {
+    font-size: 1.1rem;
+    line-height: 1.5;
+  }
+  
+  .image_gaurav {
+    margin-bottom: 2rem;
+  }
+  
+  .image_gaurav img {
+    width: 25rem;
+    height: 20rem;
+    object-fit: cover; /* Ensure image fills the container without distortion */
+    border-radius: 11rem;
+  }
+  
+  /* Responsive styles for smaller screens */
+/* Responsive styles for laptop view (larger than 768px) */
+@media (min-width: 768px) {
+    .about {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between; /* Align items to opposite ends */
+      align-items: flex-start;
     }
-} */
+  
+    .image_gaurav {
+      margin-left: 2rem; /* Adjust spacing as needed */
+    }
+  
+    .about_data {
+      text-align: left;
+    }
+  }
+  
