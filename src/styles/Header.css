@@ -5,9 +5,10 @@
   height: 100vh;
   background-image: url("../images/your-image.avif");
   background-position: center;
-  background-size: 100% 100%; /* Set background size to cover entire element */
+  background-size: 100% 100%;
   background-repeat: no-repeat;
 }
+
 
 .header-container {
   display: flex;
@@ -70,18 +71,21 @@ nav li {
 }
 
 .button {
-  padding: 1rem 2rem;
-  background-color: #333;
-  color: #fff;
-  text-decoration: none;
-  font-size: 1.2rem;
-  cursor: pointer;
-  border-radius: 1rem;
+  background-color: #6b676700;
+    border: 1px solid #000;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 20px;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: background-color .3s;
+    width: 5rem;
 }
-@media only screen and (max-width: 1400px) {
-  .header {
-    background-size: 100% 100%; /* Set background size to cover entire element */
-  }
+.button:hover{
+  background-color: #4d4b4b00;
 }
 
 @media only screen and (max-width: 768px) {
@@ -90,7 +94,15 @@ nav li {
     align-items: center;
     padding: 2rem;
   }
-
+  .button{
+    color: black;
+  }
+  .hero-text {
+    text-align: center;
+    position: relative;
+    top: 17rem;
+    color: #fff;
+  }
   nav,
   .social-media {
     text-align: center;
