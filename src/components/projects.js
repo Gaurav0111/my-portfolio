@@ -1,67 +1,81 @@
 import React from 'react';
 import '../styles/Projects.css';
-import project1Image from '../images/project1.png'; // Import your project images
-import project2Image from '../images/project2.png'; // Import your project images
-import project3Image from '../images/project3.png'; // Import your project images
-import project4Image from '../images/project4.png'; // Import your project images
+
+const projectImages = {
+  project1: require('../images/project1.png'),
+  project2: require('../images/project2.png'),
+  project3: require('../images/project3.png'),
+  project4: require('../images/project4.png'),
+};
 
 function Projects() {
-    const projects = [
-        {
-            title: 'Project 1',
-            description: 'Laboratary Report Generator',
-            url: 'https://github.com/Gaurav0111/cattle_filed_report_generation',
-            image: project1Image,
-        },
-        {
-            title: 'Project 2',
-            description: 'General Store Management System',
-            url: 'https://github.com/Gaurav0111/Python-Projects/tree/main/general_store_management',
-            image: project2Image,  
-        },
-        {
-            title: 'Project 3',
-            description: 'Personal Portfolio',
-            url: 'https://github.com/Gaurav0111/my-portfolio',
-            image: project3Image,  
-        },
-        {
-            title: 'Project 4',
-            description: 'Restaurant front-end Webpage',
-            url: 'https://github.com/Gaurav0111/Html-CSS-project',
-            image: project4Image,  
-        },
-        {
-            title: 'Project 4',
-            description: 'Description of Project 2',
-            url: 'https://example.com/project2',
-            image: project2Image, 
-        },
-        {
-            title: 'Project 4',
-            description: 'Description of Project 2',
-            url: 'https://example.com/project2',
-            image: project2Image,  
-        },
-    ];
+  const projects = [
+    {
+      id: 'project1',
+      title: 'Laboratory Report Generator',
+      description: 'Generates comprehensive laboratory reports for cattle field data.',
+      url: 'https://github.com/Gaurav0111/cattle_filed_report_generation',
+      image: projectImages.project1,
+    },
+    {
+      id: 'project2',
+      title: 'General Store Management System',
+      description: 'General Store Management System',
+      url: 'https://github.com/Gaurav0111/Python-Projects/tree/main/general_store_management',
+      image: projectImages.project2,
+    },
+    {
+      id: 'project3',
+      title: 'Personal Portfolio',
+      description: 'Personal Portfolio',
+      url: 'https://github.com/Gaurav0111/my-portfolio',
+      image: projectImages.project3,
+    },
+    {
+      id: 'project4',
+      title: 'Restaurant front-end Webpage',
+      description: 'Restaurant front-end Webpage',
+      url: 'https://github.com/Gaurav0111/Html-CSS-project',
+      image: projectImages.project4,
+    },
+    {
+      id: 'project5',
+      title: 'Description of Project 2',
+      description: 'Description of Project 2',
+      url: 'https://example.com/project2',
+      image: projectImages.project2,
+    },
+    {
+      id: 'project6',
+      title: 'Description of Project 2',
+      description: 'Description of Project 2',
+      url: 'https://example.com/project2',
+      image: projectImages.project2,
+    },
+  ];
 
-    return (
-        <section id='project' className="projects_section">
-            <h2>Projects</h2>
-            <div className="projects-list">
-                {projects.map((project, index) => (
-                    <div className="project" key={index}>
-                        <img src={project.image} alt={project.title} className='project-image' />
-                        <h3>{project.title}</h3>
-                        <p>{project.description}</p>
-                        <a href={project.url} target="_blank" rel="noopener noreferrer" style={{ color: '#000' }}>
-                            Visit Project
-                        </a>
-                    </div>
-                ))}
-            </div>
-        </section>
-    );
+  return (
+    <section id="project" className="projects_section">
+      <h2>Projects</h2>
+      <div className="projects-list">
+        {projects.map((project) => (
+          <div className="project" key={project.id}>
+            <img src={project.image} alt={project.title} className="project-image" />
+            <h3>{project.title}</h3>
+            <p>{project.description}</p>
+            <a
+              href={project.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="project-link"
+            >
+              Visit Project
+            </a>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
 }
 
 export default Projects;
