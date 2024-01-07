@@ -22,7 +22,7 @@
   }
   
   .image_gaurav img {
-    width: 25rem;
+    width: 15rem;
     height: 20rem;
     object-fit: cover; /* Ensure image fills the container without distortion */
     border-radius: 11rem;
