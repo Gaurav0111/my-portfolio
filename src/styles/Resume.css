@@ -1,53 +1,98 @@
-.resume {
-    margin-top: 1rem;
-    display: flex;
-    flex-direction: column;
-}
+/* Resume.css */
 
-.resume-printing {
+.resume {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 2rem;
+}
+
+.background_image_resume {
+    width: 100%;
+    /* height: 100%; */
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.resume-printing {
     position: relative;
-    margin-top: -47rem;
+    z-index: 1; /* Set a higher z-index to ensure it's above the background image */
+    left: 10%;
     margin-left: -25rem;
 }
 
 .resume-heading {
-    text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-    font-family: 'Libre Baskerville', serif;
+    font-size: 3rem;
+    margin-bottom: 10px;
 }
 
 .resume-image {
-    height: 40rem;
-    width: 100%;
-    max-width: 30rem;
-    display: block;
+    width: 35vw; /* Adjust the width as needed */
+    height: auto;
+    cursor: pointer;
 }
 
-/* Media query for responsiveness */
-@media (max-width: 768px) {
-    .resume-printing {
-        margin-top: -35rem;
-    }
+.get-to-know {
+    display: none;
+    font-size: 14px;
+    margin-top: 10px;
+    color: #333;
+}
 
-    .resume-heading {
+/* Add styles for the button as needed */
+button {
+    display: none;
+    padding: 1rem 2rem;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 1rem;
+}
+
+@media (max-width: 1350px) and (min-width: 700px) {
+    .background_image_resume{
+        display: none;
+    }
+    button{
+        display: none;
+    }
+    .get-to-know{
+        display: none;
+    }
+    .resume-printing{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        left: 0%;
+        margin-left: 0%;
+    }
+    
+}
+
+
+@media (max-width: 699px) {
+    .background_image_resume{
+        display: none;
+    }
+    .resume-heading{
+        display: none;
+    }
+    .resume-image{
+            display: none;
+    }
+    .get-to-know {
+        display: block;
         font-size: 2rem;
     }
-
-    .resume-image {
-        max-width: 80%;
-    }
-}
-.contact {
-    display: flex;
-    flex-direction: column;
-}
-
-@media (max-width: 768px) {
-    .contact {
-        margin-top: 3rem;
+    button {
+        display: block; 
+        margin-top: 10px;
     }
 }
