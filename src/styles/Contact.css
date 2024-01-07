@@ -6,9 +6,12 @@
     margin-top: 13rem;
     align-items: center;
     justify-content: center; 
+    border: 1px solid #333; 
+    padding: 2rem; 
+    background-color: #f2f2f2;
 }
 
-.contact_heading{
+.contact_heading {
     font-family: 'Bebas Neue', sans-serif;
     font-size: 2.2rem;
 }
@@ -19,25 +22,11 @@
     font-size: 2rem;
 }
 
-@media (max-width: 768px) {
-    .contact {
-        flex-direction: column;
-    }
-}
-
 .social-media-links {
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin-top: 1rem;
-}
-
-@media (max-width: 768px) {
-    .social-media-links {
-        flex-direction: row;
-        justify-content: space-around;
-        margin-top: 2rem;
-    }
 }
 
 .social-media-links img {
@@ -49,14 +38,6 @@
 .social-media-links a {
     text-decoration: none;
     margin: 0.3rem;
-}
-
-.contact {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2rem;
-    background-color: #f2f2f2;
 }
 
 .contact-data {
@@ -105,7 +86,25 @@
     margin-left: 2rem;
 }
 
-.spannnnn{
+.spannnnn {
     margin-left: 0.5rem;
     font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .contact {
+        flex-direction: column;
+        text-align: center;
+    }
+    .image_gaurav {
+        flex: 1;
+    max-width: 100%; /* Set max-width to 100% */
+    margin: 1rem auto; /* Center the image by using auto for left and right margin */
+    box-sizing: border-box;
+    }
+    .social-media-links {
+        flex-direction: column;
+        justify-content: space-around;
+        margin-top: 2rem;
+    }
 }
