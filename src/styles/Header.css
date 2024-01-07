@@ -34,7 +34,7 @@
 .social-media a {
   padding: 0.5rem;
   font-size: 1.5rem;
-  color: #333;
+  color: #ffffff;
 }
 
 nav ul {
@@ -73,7 +73,7 @@ nav li {
 
 .button {
   background-color: #df000000;
-  border: 1px solid #000;
+  border: 1px solid #fffefe;
   border-radius: 5px;
   color: #fff;
   cursor: pointer;
@@ -86,7 +86,7 @@ nav li {
   width: 5rem;
 }
 .hero-text a:hover{
-  background-color: #4d4b4b00;
+  background-color: #d9d4d400;
 }
 
 @media only screen and (max-width: 768px) {
@@ -96,7 +96,7 @@ nav li {
     padding: 2rem;
   }
   .button{
-    color: black;
+    color: white;
   }
   .hero-text {
     text-align: center;
