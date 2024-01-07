@@ -3,9 +3,9 @@
     margin: 5rem;
     display: flex;
     flex-direction: row;
-    margin-top: 6rem;
+    margin-top: 13rem;
     align-items: center;
-    justify-content: center;
+    justify-content: center; 
 }
 
 .contact_heading{
@@ -19,7 +19,6 @@
     font-size: 2rem;
 }
 
-/* Make the contact section responsive */
 @media (max-width: 768px) {
     .contact {
         flex-direction: column;
@@ -33,7 +32,6 @@
     margin-top: 1rem;
 }
 
-/* Adjust the social media links for responsiveness */
 @media (max-width: 768px) {
     .social-media-links {
         flex-direction: row;
@@ -51,4 +49,63 @@
 .social-media-links a {
     text-decoration: none;
     margin: 0.3rem;
+}
+
+.contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    background-color: #f2f2f2;
+}
+
+.contact-data {
+    flex: 1;
+    max-width: 600px;
+}
+
+.contact-heading {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.contact-data p {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.contact-data span {
+    font-weight: bold;
+    color: #333;
+}
+
+.social-media-links {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+.social-media-links a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.social-media-links img {
+    width: 30px;
+    height: 30px;
+    margin-right: 0.5rem;
+}
+
+.image_gaurav {
+    flex: 1;
+    max-width: 400px;
+    margin-left: 2rem;
+}
+
+.spannnnn{
+    margin-left: 0.5rem;
+    font-weight: bold;
 }
