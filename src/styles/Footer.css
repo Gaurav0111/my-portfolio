@@ -1,86 +1,87 @@
-/* src/styles/Footer.css */
+/* Footer.css */
 .footer {
     background-color: #333;
     color: #fff;
-    text-align: center;
     padding: 2rem;
-    /* height: 14rem; */
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* Add this property to align items properly */
 }
-.footer h1{
-    font-family: 'Yanone Kaffeesatz', sans-serif;
-    font-size: 3rem;
-}
-
 
 .feedback {
     display: flex;
+    align-items: center;
     flex-direction: column;
-    align-items: flex-start;
-    margin-bottom: -1rem;
 }
 
 .feedback input {
-    /* width: 100%; */
     padding: 0.5rem;
-    margin-top: 0.5rem;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+    margin-right: 0.5rem;
+    border: 2px solid black;
+    border-radius: 8px;
 }
 
-.feedback p {
+.feedback button {
+    padding: 0.5rem 2rem; /* Modify padding to match your requirement */
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
     font-size: 1.2rem;
-    margin: 0;
+    cursor: pointer;
+    border-radius: 1rem;
+    border: 1px solid black;
+    display: block; 
+    margin-top: 1rem;
 }
 
-h1 {
-    font-size: 3rem;
+.feedback button:hover {
+    background-color: #555; /* Change hover color if needed */
 }
 
 .footer-text {
-    font-size: 1rem;
-    margin: 1rem 0;
-    display: flex;
-    flex-direction: row;
-    margin-left: -13rem;
+    flex: 1; /* Take up available space */
+    text-align: center;
 }
 
-.footer-text p {
-    margin-left: 16rem;
-    font-family: 'Shadows Into Light', cursive;
-    font-size: 1.5rem;
+.parara {
+    margin: 0.5rem 0;
 }
 
 .social-links {
     display: flex;
-    justify-content: center;
-    margin: 1rem 0;
 }
 
 .social-links a {
     color: #fff;
+    margin: 0 0.5rem;
     text-decoration: none;
-    margin: 0 10px;
-}
-
-.social-links a:hover {
-    text-decoration: underline;
 }
 
 @media (max-width: 768px) {
     .footer {
-        height: auto; /* Adjust as needed */
+        flex-direction: column;
     }
 
     .feedback {
-        align-items: center;
-        margin-bottom: 0;
+        width: 100%;
+        justify-content: center;
     }
 
-    .feedback input {
-        width: 100%; /* Adjust as needed */
+    .feedback input,
+    .feedback button {
+        width: 100%;
+        margin: 0.5rem 0;
     }
 
-    .h1 {
-        font-size: 2rem;
+    .footer-text {
+        text-align: center;
+        margin-top: 1rem;
+    }
+
+    .social-links {
+        width: 100%;
+        justify-content: center;
+        margin-top: 1rem;
     }
 }
