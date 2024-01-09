@@ -36,6 +36,11 @@
   font-size: 1.5rem;
   color: #ffffff;
 }
+.social-media a img{
+  border-radius: 8px;
+  margin:-6px;
+}
+
 
 nav ul {
   list-style: none;
