@@ -3,7 +3,7 @@ import React from 'react';
 import '../styles/Resume.css';
 
 function Resume() {
-    const pdfUrl = `${process.env.PUBLIC_URL}/resume.pdf`;
+    const pdfUrl = `${process.env.PUBLIC_URL}/resume_gaurav.pdf`;
 
     const handleDownloadResume = () => {
         const link = document.createElement('a');
