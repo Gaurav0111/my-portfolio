@@ -19,7 +19,8 @@ function Header() {
         <div className="social-media">
           <a href="https://www.linkedin.com/in/gaurav-garwal/"><img src={`${process.env.PUBLIC_URL}/linkedin-logo.jpeg`} alt="LinkedIn" width="40" height="40" /></a>
           <a href="https://github.com/Gaurav0111"><img src={`${process.env.PUBLIC_URL}/github-logo.jpeg`} alt="GitHub" width="40" height="40" /></a>
-          <a href="https://auth.geeksforgeeks.org/user/garwalgatsl7"><img src={`${process.env.PUBLIC_URL}/instagram-logo.jpeg`} alt="gfg" width="40" height="40" /></a>
+          <a href="https://auth.geeksforgeeks.org/user/garwalgatsl7"><img src={`${process.env.PUBLIC_URL}/gfg-logo.jpeg`} alt="gfg" width="40" height="40" /></a>
+          <a href="https://leetcode.com/u/GauravGarwal/"><img src={`${process.env.PUBLIC_URL}/leetcode-logo.jpeg`} alt="leetcode" width="40" height="40" /></a>
         </div>
       </div>
       <div className="hero-text">

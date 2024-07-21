@@ -36,16 +36,17 @@
   font-size: 1.5rem;
   color: #ffffff;
 }
-.social-media a img{
+
+.social-media a img {
   border-radius: 8px;
-  margin:-6px;
+  margin: -6px;
 }
 
 
 nav ul {
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin-left: 8rem;
 }
 
 nav li {
@@ -90,7 +91,8 @@ nav li {
   transition: background-color .3s;
   width: 5rem;
 }
-.hero-text a:hover{
+
+.hero-text a:hover {
   background-color: #d9d4d400;
 }
 
@@ -100,15 +102,18 @@ nav li {
     align-items: center;
     padding: 2rem;
   }
-  .button{
+
+  .button {
     color: white;
   }
+
   .hero-text {
     text-align: center;
     position: relative;
     top: 17rem;
     color: #fff;
   }
+
   nav,
   .social-media {
     text-align: center;
@@ -119,6 +124,7 @@ nav li {
   nav {
     display: none;
   }
+
   .logo {
     color: white;
   }

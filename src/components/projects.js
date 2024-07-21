@@ -6,6 +6,7 @@ const projectImages = {
   project2: require('../images/project2.png'),
   project3: require('../images/project3.png'),
   project4: require('../images/project4.png'),
+  project5: require('../images/project5.png'),
 };
 
 function Projects() {
@@ -40,15 +41,15 @@ function Projects() {
     },
     {
       id: 'project5',
-      title: 'Description of Project 2',
-      description: 'Description of Project 2',
-      url: 'https://example.com/project2',
-      image: projectImages.project2,
+      title: 'Task-manager',
+      description: 'Developed a comprehensive task management system with a Swing-based GUI',
+      url: 'https://github.com/Gaurav0111/task_manager',
+      image: projectImages.project5,
     },
     {
       id: 'project6',
-      title: 'Description of Project 2',
-      description: 'Description of Project 2',
+      title: 'Description of Project 6',
+      description: 'Description of Project 6',
       url: 'https://example.com/project2',
       image: projectImages.project2,
     },
