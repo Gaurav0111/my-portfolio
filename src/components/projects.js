@@ -9,6 +9,7 @@ const projectImages = {
   project5: require('../images/project5.png'),
 };
 
+
 function Projects() {
   const projects = [
     {
