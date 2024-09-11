@@ -7,6 +7,7 @@ const projectImages = {
   project3: require('../images/project3.png'),
   project4: require('../images/project4.png'),
   project5: require('../images/project5.png'),
+  project6: require('../images/project6.png'),
 };
 
 
@@ -49,10 +50,10 @@ function Projects() {
     },
     {
       id: 'project6',
-      title: 'Description of Project 6',
-      description: 'Description of Project 6',
-      url: 'https://example.com/project2',
-      image: projectImages.project2,
+      title: 'Digital File Storage System',
+      description: 'Developed a cloud based system using MERN stack for storing files digitally',
+      url: 'https://github.com/Gaurav0111/Cloud-Based-File-Storage-System',
+      image: projectImages.project6,
     },
   ];
 
